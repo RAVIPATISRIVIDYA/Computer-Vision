@@ -2,8 +2,6 @@ import cv2
 import numpy as np
 from PIL import Image
 import os
-
-#Directory path name where the face images are stored.
 path = './images/'
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 #Haar cascade file
