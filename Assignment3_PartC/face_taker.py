@@ -1,8 +1,6 @@
 import numpy as np
 import cv2
 import os
-
-# Check if folder exists
 if not os.path.exists('images'):
     os.makedirs('images')
 
@@ -32,8 +30,6 @@ while(True):
     k = cv2.waitKey(100) & 0xff
     if k < 30:
         break
-    # Take 30 face samples and stop video. You may increase or decrease the number of
-    # images. The more the better while training the model.
     elif count >= 30:
          break
 
